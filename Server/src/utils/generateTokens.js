@@ -1,4 +1,3 @@
-const { removeListener } = require("../app");
 const jwt = require("./jwt");
 
 const generateToken = (user) => {

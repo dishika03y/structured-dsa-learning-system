@@ -1,196 +1,158 @@
-Structured DSA Learning System
-Overview
+# Structured DSA Learning System
 
-The Structured DSA Learning System is a beginner-first, pattern-driven learning platform designed to solve the core problem in DSA education: poor sequencing and lack of intuition building.
+## Overview
 
-Instead of mixing Data Structures and Algorithms, this system follows a Data Structure First → Algorithm Mastery Later approach, backed by diagnostics, revision logic, and personalized roadmaps.
+The **Structured DSA Learning System** is a beginner-first, pattern-driven learning platform designed to solve the core problem in DSA education: **poor sequencing and lack of intuition building**.
 
-Problem Statement
+Instead of mixing Data Structures and Algorithms, this system follows a **Data Structure First → Algorithm Mastery Later** approach, backed by diagnostics, revision logic, and personalized roadmaps.
 
-Most students fail to stay consistent with DSA due to:
+## **Problem Statement**
 
-Unstructured learning paths
+#### Most students fail to stay consistent with DSA due to:
 
-Overwhelming content
+- Unstructured learning paths
+- Overwhelming content
+- Lack of pattern-based practice
+- No progress or confidence tracking\
 
-Lack of pattern-based practice
+> \*_The real problem isn’t content. It’s how DSA is taught._
 
-No progress or confidence tracking
+---
 
-Survey insights (25 learners):
+## Survey Insights (25 Learners)
 
-64% paused DSA learning
+- **64%** paused DSA learning due to confusion or lack of structure
+- **52%** reported no proper learning path
+- **46%** cited lack of practice and content overload
+- Average satisfaction rating: **2–3 / 5**
 
-52% lacked a proper learning path
+---
 
-46% reported insufficient practice
+## Core Insight
 
-Average satisfaction: 2–3 / 5
+Most platforms teach **Data Structures and Algorithms together**, causing beginners to:
 
-Root cause:
+- Fail at pattern recognition
+- Get stuck at medium-level problems
+- Restart DSA repeatedly without progress
 
-The problem isn’t content — it’s how DSA is taught.
+This creates a **confidence gap** that prevents long-term consistency.
 
-Solution
+---
 
-A structured, beginner-centric system that provides:
+## Solution Approach
 
-Data Structures taught before algorithms
+The system introduces a **structured, phase-wise learning model**:
 
-Algorithm mastery through 20–25 sequenced pattern-based questions
+### Phase 1: Data Structure Foundation
 
-Diagnostic tests with per-topic mastery analysis
+- Arrays, Strings, Linked Lists, Stack, Queue, Trees, Graphs
+- CRUD operations, intuition, real-world examples
+- No algorithms introduced at this stage
 
-Auto-generated revision sheets for weak areas
+### Phase 2: Algorithm Mastery (One Pattern at a Time)
 
-Locked, personalized roadmaps to prevent random skipping
+- Two Pointers → Sliding Window → Hashing → Prefix Sum → etc.
+- 20–25 sequenced questions per pattern
+- Pattern recognition before complexity
 
-Consistency-focused design (daily goals, progress tracking)
+### Phase 3: Tests & Projects
 
-Learning Phases
+- Topic-wise diagnostic tests
+- Pattern-based coding tests
+- Mini DSA-based projects
 
-DS Foundation
+### Phase 4: Consistency System
 
-Arrays, Strings, Linked List, Stack, Queue, Trees, Graphs, Hashing, Recursion
+- Daily goals & progress tracking
+- Revision packs for weak areas
+- Peer accountability & doubt support
 
-Intuition, CRUD, complexity, real-world examples
+---
 
-Algorithm Mastery
+## Key Features
 
-One pattern at a time (Two Pointers, Sliding Window, Hashing, etc.)
+- Diagnostic DS & Algorithm tests
+- Per-topic mastery calculation
+- Auto-generated revision sheets
+- Locked, forward-only roadmaps
+- Role-based access (User / Admin)
+- Admin-managed question bank
 
-20–25 problems per pattern in increasing difficulty
+---
 
-Projects & Tests
+## Tech Stack
 
-Topic-wise tests
+### Frontend
 
-Pattern-based mini projects
+- React + Vite
+- Tailwind CSS
+- Zustand
+- React Router
+- Recharts
 
-Company-specific preparation paths
+### Backend
 
-Consistency Engine
+- Node.js
+- Express.js
+- JWT Authentication
+- Role-Based Authorization
 
-Revision packs
+### Database
 
-Skill retention tracking
+- MongoDB (Atlas)
 
-Peer accountability & doubt support
+### AI Integration
 
-Core Features
+- OpenAI API (revision generation & feedback)
 
-DS & Algorithm Diagnostic Tests
+---
 
-Per-topic mastery scoring
+## Project Status
 
-Auto-generated revision packs
+🚧 Backend MVP in progress  
+🚀 Frontend and AI modules planned
 
-Locked, level-based roadmaps
+## Folder Structure (Backend)
 
-Pattern & company-tagged questions
-
-Role-based access (User / Admin)
-
-Secure JWT authentication
-
-Tech Stack
-
-Frontend
-
-React + Vite
-
-Tailwind CSS
-
-Zustand
-
-React Router
-
-Backend
-
-Node.js
-
-Express.js
-
-JWT Authentication
-
-Role-based Authorization
-
-Database
-
-MongoDB (Atlas)
-
-AI (Planned)
-
-OpenAI API (revision generation, feedback)
-
-Deployment
-
-Frontend: Vercel
-
-Backend: Render
-
-Database: MongoDB Atlas
-
-Backend Architecture
 src/
-├── config/
-├── models/
-├── routes/
 ├── controllers/
+├── routes/
+├── models/
 ├── services/
 ├── middleware/
-│   ├── auth.middleware.js
-│   ├── role.middleware.js
-│   └── error.middleware.js
 ├── utils/
-└── app.js
+├── config/
+├── app.js
+└── server.js
 
-API Highlights
+## API Highlights
 
-Auth: Register, Login, Refresh, Logout
+- Auth: Register, Login, Refresh, Logout
+- Tests: Start Test, Submit, Result
+- Questions: Randomized, Pattern-Tagged
+- Roadmaps: Personalized & Locked
+- Revision Sheets: Auto-generated
+- Admin: Question & roadmap management
 
-Tests: Start Test, Submit, Result
-
-Questions: Randomized, Pattern-Tagged
-
-Roadmaps: Personalized & Locked
-
-Revision Sheets: Auto-generated
-
-Admin: Question & roadmap management
-
-All APIs follow a standard response format:
+### All APIs follow a standard response format:
 
 {
-  "success": true,
-  "data": {},
-  "message": "",
-  "error": null
+"success": true,
+"data": {},
+"message": "",
+"error": null
 }
 
-Status
+---
 
-🚧 Under active development
-Currently implementing core backend flows:
+## Why This Project Matters
 
-Authentication
+This project focuses on **learning systems**, not just content delivery.  
+It is designed to help beginners build **intuition, confidence, and consistency** in DSA—something most platforms fail to do.
 
-Diagnostic tests
+---
 
-Scoring engine
+## Author
 
-Roadmap generation
-
-Why This Project Matters
-
-This project is built using industry-style problem analysis:
-
-Real user survey
-
-Root-cause identification
-
-System-level solution design
-
-Modular, scalable backend architecture
-
-It demonstrates product thinking, not just CRUD implementation.
+Built with a problem-first, industry-grade approach.
