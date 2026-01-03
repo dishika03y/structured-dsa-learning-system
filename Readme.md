@@ -1,7 +1,5 @@
 # Structured DSA Learning System
 
-<<<<<<< HEAD
-
 ## Overview
 
 The **Structured DSA Learning System** is a beginner-first, pattern-driven learning platform designed to solve the core problem in DSA education: **poor sequencing and lack of intuition building**.
@@ -116,3 +114,45 @@ The system introduces a **structured, phase-wise learning model**:
 🚀 Frontend and AI modules planned
 
 ## Folder Structure (Backend)
+
+src/
+├── controllers/
+├── routes/
+├── models/
+├── services/
+├── middleware/
+├── utils/
+├── config/
+├── app.js
+└── server.js
+
+## API Highlights
+
+- Auth: Register, Login, Refresh, Logout
+- Tests: Start Test, Submit, Result
+- Questions: Randomized, Pattern-Tagged
+- Roadmaps: Personalized & Locked
+- Revision Sheets: Auto-generated
+- Admin: Question & roadmap management
+
+### All APIs follow a standard response format:
+
+{
+"success": true,
+"data": {},
+"message": "",
+"error": null
+}
+
+---
+
+## Why This Project Matters
+
+This project focuses on **learning systems**, not just content delivery.  
+It is designed to help beginners build **intuition, confidence, and consistency** in DSA—something most platforms fail to do.
+
+---
+
+## Author
+
+Built with a problem-first, industry-grade approach.
